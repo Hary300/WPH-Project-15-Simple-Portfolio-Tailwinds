@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge 1 - Hary300</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/landing-page.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="font-Inter text-white flex flex-col items-center bg-black">
+    <div class="container">
+      <!-- ===== 1. HEADER SECTION ===== -->
+      <header
+        class="flex sticky top-0 justify-between items-center p-4 md:py-6 md:px-15 lg:px-35 z-30 backdrop-blur-2xl"
+      >
+        <div
+          class="header-background bg-black backdrop-blur-2xl absolute inset-0 lg:hidden"
+        ></div>
+
+        <h1 class="logo text-2xl font-bold relative z-50">
+          <a href="#home">Tech.</a>
+        </h1>
+
+        <nav class="menu hidden lg:block">
+          <ul class="flex gap-11">
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#our-work">Our Work</a></li>
+            <li><a href="#team">Team</a></li>
+          </ul>
+        </nav>
+
+        <div class="btn-container hidden lg:min-w-40 lg:block">
+          <button class="btn">
+            <a href="#contact-us">Contact Us</a>
+          </button>
+        </div>
+
+        <div class="lg:hidden">
+          <input type="checkbox" class="peer hidden checked-state" id="menu" />
+          <label
+            for="menu"
+            class="hamburger-button flex flex-col gap-1.5 cursor-pointer relative z-20 peer-checked:[&>.first-line]:rotate-45 peer-checked:[&>.first-line]:translate-y-2 peer-checked:[&>.middle-line]:opacity-0 peer-checked:[&>.last-line]:-rotate-45 peer-checked:[&>.last-line]:-translate-y-2"
+          >
+            <span
+              class="first-line w-5 h-0.5 bg-[#FDFDFD] rounded-full transition-transform duration-300"
+            ></span>
+            <span
+              class="middle-line w-5 h-0.5 bg-[#FDFDFD] rounded-full transition-opacity duration-300"
+            ></span>
+            <span
+              class="last-line w-5 h-0.5 bg-[#FDFDFD] rounded-full transition-transform duration-300"
+            ></span>
+          </label>
+
+          <!-- offset menu -->
+          <nav
+            class="offset-menu flex flex-col absolute left-0 w-full top-16 gap-4 transition-transform -translate-y-500 duration-300 peer-checked:translate-y-0 lg:hidden bg-black h-dvh pointer-events-none peer-checked:pointer-events-auto px-4 md:py-6 md:px-15"
+          >
+            <ul class="flex flex-col gap-4 md:gap-6">
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li>
+                <a href="#service" class="nav-link">Service</a>
+              </li>
+              <li>
+                <a href="#our-work" class="nav-link">Our Work</a>
+              </li>
+              <li>
+                <a href="#team" class="nav-link">Team</a>
+              </li>
+            </ul>
+
+            <a href="#contact-us" class="w-full">
+              <div class="btn-container p-4">
+                <button class="contact-us-btn btn">Contact Us</button>
+              </div></a
+            >
+          </nav>
+        </div>
+      </header>
+
+      <!-- ===== 2. HERO SECTION ===== -->
+      <section
+        class="hero flex flex-col lg:relative lg:flex-row lg:py-23 xl:py-53.5 gap-6 pt-10 px-4 md:px-15 lg:px-35 bg-line bg-linear-to-b from-[#0000] to-[#210A5E]/30 lg:overflow-hidden"
+        id="hero"
+      >
+        <div
+          class="text flex flex-col items-start gap-4 lg:w-[55%] xl:gap-8 xl:w-[60%] 2xl:w-[50%]"
+        >
+          <h2 class="text-[40px] font-bold leading-12 xl:text-[58px]">
+            Build with the <span class="italic">Future.</span>
+          </h2>
+          <p class="text-[#717680] text-base xl:text-xl">
+            From building sleek websites and mobile apps to integrating AI
+            solutions, we help brands turn ideas into powerful digital
+            experiences that connect, engage, and scale.
+          </p>
+          <a href="#contact-us" class="w-full lg:max-w-75 lg:block pt-10">
+            <div class="btn-container">
+              <button class="btn">Let's Talk</button>
+            </div></a
+          >
+        </div>
+
+        <div
+          class="self-start lg:absolute lg:w-[35%] xl:w-[45%] 2xl:w-[38%] lg:top-0 lg:right-35"
+        >
+          <img src="./assets/images/hand.png" alt="phone" />
+        </div>
+      </section>
+
+      <!-- ===== 3. WHO WE ARE SECTION ===== -->
+      <section class="who-we-are section-layout" id="about">
+        <h2 class="h2-text">Who we are</h2>
+        <p class="p-text">
+          We're a group of tech students trained in
+          <span class="text-[#FDFDFD]"
+            >building real-world digital products</span
+          >. From coding to design, we
+          <span class="text-[#FDFDFD]"
+            >craft modern solutions for modern problems</span
+          >.
+        </p>
+      </section>
+
+      <!-- ===== 4. WHAT WE DO SECTION ===== -->
+      <section class="what-we-do section-layout" id="service">
+        <div class="text">
+          <h2 class="h2-text">What We Do</h2>
+          <p class="p-text">
+            We offer simple tech solutions to help your ideas grow.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 w-full gap-4 md:grid-cols-3 md:gap-5">
+          <!-- card 1 -->
+          <div class="card service-card">
+            <img src="./assets/images/website.png" alt="Website" />
+            <h3>Web Development</h3>
+            <p class="p-text">
+              Modern websites using HTML, CSS, JavaScript, and frameworks.
+            </p>
+          </div>
+          <!-- card 2 -->
+          <div class="card service-card">
+            <img src="./assets/images/mobile.png" alt="Mobile" />
+            <h3>App Development</h3>
+            <p class="p-text">
+              Mobile and desktop apps tailored for your needs
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div class="card service-card">
+            <img src="./assets/images/ai.png" alt="AI" />
+            <h3>AI Integration</h3>
+            <p class="p-text">
+              Smart solutions using AI-powered tools and automation.
+            </p>
+          </div>
+          <!-- card 4 -->
+          <div class="card service-card">
+            <img src="./assets/images/paint.png" alt="paint" />
+            <h3>UI/UX Design</h3>
+            <p class="p-text">
+              Clean and functional designs for better user experience.
+            </p>
+          </div>
+          <!-- card 5  -->
+          <div class="card service-card">
+            <img src="./assets/images/landing-page.png" alt="Landing page" />
+            <h3>Landing Page Design</h3>
+            <p class="p-text">
+              High-converting landing pages for your product or business.
+            </p>
+          </div>
+          <!-- card 6 -->
+          <div class="card service-card">
+            <img src="./assets/images/cms.png" alt="CMS" />
+            <h3>CMS Integration</h3>
+            <p class="p-text">
+              Easy-to-manage websites with WordPress or Webflow.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. OUR WORK SECTION ===== -->
+      <section class="our-work section-layout" id="our-work">
+        <div class="text">
+          <h2 class="h2-text">Our Work</h2>
+          <p class="p-text">See what we've built with passion and purpose</p>
+        </div>
+
+        <!-- portfolio -->
+        <div class="flex flex-col lg:flex-row gap-4">
+          <!-- card 1 -->
+          <div class="flex flex-col gap-4">
+            <div class="Portfolio rounded-2xl overflow-hidden portfolio-card">
+              <img src="./assets/images/image-214.png" alt="portofoliocard1" />
+            </div>
+            <p class="text-left">Portfolio 1</p>
+          </div>
+
+          <!-- card 2 -->
+          <div class="flex flex-col gap-4">
+            <div class="Portfolio portfolio-card">
+              <img src="./assets/images/image-314.png" alt="portofoliocard2" />
+            </div>
+            <p class="text-left">Portfolio 2</p>
+          </div>
+
+          <!-- card 3 -->
+          <div class="flex flex-col gap-4">
+            <div class="Portfolio rounded-2xl overflow-hidden portfolio-card">
+              <img src="./assets/images/image-414.png" alt="portofoliocard3" />
+            </div>
+            <p class="text-left">Portfolio 3</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. MEET THE TEAM SECTION ===== -->
+      <section class="meet-the-team section-layout" id="team">
+        <div class="text">
+          <h2 class="h2-text">Meet the Team</h2>
+          <p class="p-text">A group of future-ready tech makers.</p>
+        </div>
+
+        <!-- picture -->
+        <div
+          class="members grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10 lg:gap-4 w-full"
+        >
+          <div class="flex flex-col gap-3">
+            <img
+              src="./assets/images/jasper-kim.png"
+              alt="Member Card1"
+              class="team-member-image"
+            />
+            <h3 class="name-title">Jasper Kim</h3>
+            <p class="text-center text-sm text-[#717680]">Project Manager</p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <img
+              src="./assets/images/alex-jonathan.png"
+              alt="Member Card2"
+              class="team-member-image"
+            />
+            <h3 class="name-title">Alex Jonathan</h3>
+            <p class="text-center text-sm text-[#717680]">
+              Full-stack Developer
+            </p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <img
+              src="./assets/images/mario-lopez.png"
+              alt="Member Card4"
+              class="team-member-image"
+            />
+            <h3 class="name-title">Mario Lopez</h3>
+            <p class="text-center text-sm text-[#717680]">UI/UX Designer</p>
+          </div>
+
+          <div class="flex flex-col gap-3">
+            <img
+              src="./assets/images/william-soke.png"
+              alt="Member Card4"
+              class="team-member-image"
+            />
+            <h3 class="name-title">William Soke</h3>
+            <p class="text-center text-sm text-[#717680]">Data Scientist</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. LEST'S COLLABORATE SECTION ===== -->
+      <section class="let-us-colaborate section-layout" id="contact-us">
+        <div class="text">
+          <h2 class="h2-text">Let's Collaborate</h2>
+          <p class="p-text">Need a tech team? We're ready to help</p>
+        </div>
+
+        <!-- Form -->
+        <form class="form w-full lg:max-w-150">
+          <div class="name input-field">
+            <label for="name" class="input-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="input"
+            />
+          </div>
+          <div class="email input-field">
+            <label for="email" class="input-label">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter your email"
+              class="input"
+            />
+          </div>
+          <div class="message input-field">
+            <label for="message" class="input-label">Message</label>
+            <textarea
+              id="message"
+              placeholder="Enter your message"
+              class="input"
+            ></textarea>
+          </div>
+          <button class="btn mt-10">Send</button>
+        </form>
+      </section>
+      <!-- ends -->
+    </div>
+
+    <!-- ===== 8. FOOTER ===== -->
+    <footer class="pb-10">
+      &copy 2026 Created By
+      <a
+        href="https://github.com/Hary300"
+        target="_blank"
+        class="hover:text-[#7454d1]"
+        >Hary300</a
+      >
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
