@@ -7,10 +7,10 @@ const offsetMenu = document.querySelector('.offset-menu');
 const checkedState = document.querySelector('.checked-state');
 
 document.addEventListener('click', function (event) {
-  const isNavLink = event.target.closest('.nav-link');
+  const menuLiA = event.target.closest('.menu-li-a');
   const isContactUsBtn = event.target.closest('.contact-us-btn');
 
-  if (isNavLink || isContactUsBtn) {
+  if (menuLiA || isContactUsBtn) {
     checkedState.checked = false;
   }
 });
