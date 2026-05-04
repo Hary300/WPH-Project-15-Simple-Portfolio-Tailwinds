@@ -297,7 +297,9 @@
         <!-- Form -->
         <form class="form w-full lg:max-w-150">
           <div class="name input-field">
-            <label for="name" class="input-label">Name</label>
+            <label for="name" class="input-label flex justify-between"
+              >Name <span class="error-container text-red-500 font-thin"></span
+            ></label>
             <input
               type="text"
               id="name"
@@ -305,8 +307,11 @@
               class="input"
             />
           </div>
+
           <div class="email input-field">
-            <label for="email" class="input-label">Email</label>
+            <label for="email" class="input-label flex justify-between"
+              >Email<span class="error-container text-red-500 font-thin"></span
+            ></label>
             <input
               type="text"
               id="email"
@@ -314,18 +319,36 @@
               class="input"
             />
           </div>
+
           <div class="message input-field">
-            <label for="message" class="input-label">Message</label>
+            <label for="message" class="input-label flex justify-between"
+              >Message<span
+                class="error-container text-red-500 font-thin"
+              ></span
+            ></label>
             <textarea
               id="message"
               placeholder="Enter your message"
               class="input"
             ></textarea>
           </div>
-          <button class="btn mt-10">Send</button>
+
+          <button class="submit-button btn mt-10">Send</button>
         </form>
       </section>
-      <!-- ends -->
+
+      <!-- modal starts -->
+      <div
+        class="modal flex justify-center items-center fixed left-0 top-0 size-full z-30 p-5 md:p-0 opacity-0 transition-all scale-95 duration-300 pointer-events-none"
+      >
+        <div
+          class="overlay absolute left-0 top-0 size-full bg-[rgba(0,0,0,0.7)]"
+        ></div>
+        <div
+          class="box-modal flex flex-col items-center z-40 py-10 px-5 bg-black border border-[rgb(66,26,188)] rounded-4xl w-full max-w-90"
+        ></div>
+      </div>
+      <!-- modal ends -->
     </div>
 
     <!-- ===== 8. FOOTER ===== -->

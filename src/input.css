@@ -80,6 +80,11 @@
 .input {
   @apply flex border border-solid border-[rgb(37,43,55)] rounded-xl py-2 px-4 gap-2 font-medium text-sm/7 text-left text-[rgb(253,253,253)] bg-black;
 }
+
+.input.is-invalid {
+  @apply border-red-600;
+}
+
 ::placeholder {
   @apply font-normal text-base/[30px] tracking-[-0.03em] text-[rgba(113,118,128,1)];
 }
