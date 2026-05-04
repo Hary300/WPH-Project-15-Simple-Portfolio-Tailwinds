@@ -35,10 +35,10 @@
 
         <nav class="menu hidden lg:block">
           <ul class="flex gap-11">
-            <li><a href="#about">About</a></li>
-            <li><a href="#service">Service</a></li>
-            <li><a href="#our-work">Our Work</a></li>
-            <li><a href="#team">Team</a></li>
+            <li><a href="#about" class="menu-li-a">About</a></li>
+            <li><a href="#service" class="menu-li-a">Service</a></li>
+            <li><a href="#our-work" class="menu-li-a">Our Work</a></li>
+            <li><a href="#team" class="menu-li-a">Team</a></li>
           </ul>
         </nav>
 
@@ -48,6 +48,7 @@
           </button>
         </div>
 
+        <!-- hamburger menu -->
         <div class="lg:hidden">
           <input type="checkbox" class="peer hidden checked-state" id="menu" />
           <label
@@ -70,15 +71,15 @@
             class="offset-menu flex flex-col absolute left-0 w-full top-16 gap-4 transition-transform -translate-y-500 duration-300 peer-checked:translate-y-0 lg:hidden bg-black h-dvh pointer-events-none peer-checked:pointer-events-auto px-4 md:py-6 md:px-15"
           >
             <ul class="flex flex-col gap-4 md:gap-6">
-              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#about" class="menu-li-a">About</a></li>
               <li>
-                <a href="#service" class="nav-link">Service</a>
+                <a href="#service" class="menu-li-a">Service</a>
               </li>
               <li>
-                <a href="#our-work" class="nav-link">Our Work</a>
+                <a href="#our-work" class="menu-li-a">Our Work</a>
               </li>
               <li>
-                <a href="#team" class="nav-link">Team</a>
+                <a href="#team" class="menu-li-a">Team</a>
               </li>
             </ul>
 
@@ -242,7 +243,7 @@
         <div
           class="members grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-10 lg:gap-4 w-full"
         >
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 group">
             <img
               src="./assets/images/jasper-kim.png"
               alt="Member Card1"
@@ -252,7 +253,7 @@
             <p class="text-center text-sm text-[#717680]">Project Manager</p>
           </div>
 
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 group">
             <img
               src="./assets/images/alex-jonathan.png"
               alt="Member Card2"
@@ -264,7 +265,7 @@
             </p>
           </div>
 
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 group">
             <img
               src="./assets/images/mario-lopez.png"
               alt="Member Card4"
@@ -274,7 +275,7 @@
             <p class="text-center text-sm text-[#717680]">UI/UX Designer</p>
           </div>
 
-          <div class="flex flex-col gap-3">
+          <div class="flex flex-col gap-3 group">
             <img
               src="./assets/images/william-soke.png"
               alt="Member Card4"

@@ -63,13 +63,13 @@
   @apply max-w-[373px] w-[91.6dvw] h-auto rounded-2xl;
 }
 .name-title {
-  @apply font-bold text-center text-base/[30px] md:text-lg/8 lg:text-xl/[34px] tracking-[-0.02em] md:tracking-[-0.02em] text-[rgb(253,253,253)] transition-all duration-500 ease-in-out group-hover:text-[rgba(167,140,241,0.75)];
+  @apply font-bold text-center text-base/[30px] md:text-lg/8 lg:text-xl/[34px] tracking-[-0.02em]  text-[rgb(253,253,253)] transition-all duration-300 ease-in-out group-hover:text-[rgba(167,140,241,0.75)];
 }
 .team-member-card {
   @apply flex flex-col justify-center  items-center gap-3 md:gap-4 lg:gap-5 w-[min(39.5dvw,160px)] md:w-[19dvw] lg:w-[15.25dvw] transition-all duration-300 ease-in-out hover:cursor-pointer;
 }
 .team-member-image {
-  @apply w-full h-auto transition-all duration-300 ease-in-out group-hover:transform-[scale(1.1)] group-hover:cursor-pointer;
+  @apply w-full h-auto transition-all duration-300 ease-in-out group-hover:scale-103 group-hover:cursor-pointer;
 }
 .input-field {
   @apply flex flex-col gap-1.5;
